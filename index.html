@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player and Carousel</title>
+    <link rel="stylesheet" href="path/to/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+      <nav class="main-menu">
+        <div>
+          <div class="user-info">
+            <img decoding="async"
+              src="https://static.vecteezy.com/system/resources/previews/024/183/502/original/male-avatar-portrait-of-a-young-man-with-a-beard-illustration-of-male-character-in-modern-color-style-vector.jpg"
+              alt="user" />
+            <p>Amit Singh</p>
+          </div>
+          <ul>
+            <li class="nav-item active">
+              <a href="#">
+                <i class="fa fa-map nav-icon"></i>
+                <span class="nav-text">Discover</span>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-arrow-trend-up nav-icon"></i>
+                <span class="nav-text">Trending</span>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-compact-disc nav-icon"></i>
+                <span class="nav-text">Album</span>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-circle-play nav-icon"></i>
+                <span class="nav-text">Playlist</span>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-heart nav-icon"></i>
+                <span class="nav-text">Favorites</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <ul>
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-user nav-icon"></i>
+              <span class="nav-text">Profile</span>
+            </a>
+          </li>
+  
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-gear nav-icon"></i>
+              <span class="nav-text">Settings</span>
+            </a>
+          </li>
+  
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-right-from-bracket nav-icon"></i>
+              <span class="nav-text">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+  
+      <section class="content">
+        <div class="left-content">
+          <div class="slider-container">
+            <h1>Popular Playlist</h1>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img decoding="async"
+                    src="https://resources.tidal.com/images/4a9b70f4/4471/4994/8c3b/23835ec17fd8/640x640.jpg" />
+                  <div class="slide-overlay">
+                    <h2>Midnight Moods</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img decoding="async"
+                    src="https://static.toiimg.com/thumb/imgsize-23456,msid-92037952,width-600,resizemode-4/92037952.jpg" />
+                  <div class="slide-overlay">
+                    <h2>Party Starters</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/ab52d9d0-308e-43e0-a577-dce35fedd2a3" />
+                  <div class="slide-overlay">
+                    <h2>Relaxing Tones</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/20c8fdd5-9f4a-4917-ae90-0239a52e8334" />
+                  <div class="slide-overlay">
+                    <h2>Smooth Jazz Journey</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/df461a99-2fb3-4d55-ac16-2e0c6dd783e1" />
+                  <div class="slide-overlay">
+                    <h2>Uplifting Rhythms</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+  
+          <div class="artists">
+            <h1>Featured Artists</h1>
+            <div class="artist-container containers">
+              <div class="artist">
+                <img decoding="async"
+                  src="https://www.musicalsafar.com/wp-content/uploads/2021/08/20_05_2021-arijit_singh_21660518.jpg"
+                  alt="" />
+                <p>Arijit Singh</p>
+              </div>
+  
+              <div class="artist">
+                <img decoding="async"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS3uxvPvC8jj5TqKOOJugiktHe94CbFs5tcA&s"
+                  alt="" />
+                <p>Alka Yagnik</p>
+              </div>
+  
+              <div class="artist">
+                <img decoding="async"
+                  src="https://cdn.siasat.com/wp-content/uploads/2021/06/neha.jpg"
+                  alt="" />
+                <p>Neha Kakkar</p>
+              </div>
+  
+              <div class="artist">
+                <img decoding="async"
+                  src="https://img.staticmb.com/mbcontent/images/crop/uploads/2023/5/sonu-nigam-house_0_1200.jpg"
+                  alt="" />
+                <p>Sonu Nigam</p>
+              </div>
+  
+              <div class="artist">
+                <img decoding="async"
+                  src="https://img.indiaforums.com/article/900x900/19/9619-kumar-sanu-music-is-now-a-secondary-concern-when-it-was-once-a-top-one.jpg"
+                  alt="" />
+                <p>Kumar Sanu</p>
+              </div>
+  
+              <div class="artist">
+                <img decoding="async"
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/f511c102-3217-4bea-bede-8be23b969bd8"
+                  alt="" />
+                <p>Maroon 5</p>
+              </div>
+  
+              <div class="artist">
+                <img decoding="async"
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/9a8bd237-b525-43e6-a37c-daaac39db8ce"
+                  alt="" />
+                <p>Imagine Dragons</p>
+              </div>
+  
+              <div class="artist">
+                <img decoding="async"
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/99452c85-26f4-4ccd-b439-7d1bd3875634"
+                  alt="" />
+                <p>Billie Eilish</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="albums">
+            <h1>Recommended Albums</h1>
+            <div class="album-container containers">
+              <div class="album">
+                <div class="album-frame">
+                  <img decoding="async"
+                    src="https://i.scdn.co/image/ab67616d0000b273c08202c50371e234d20caf62"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>Kesariya</h2>
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+  
+              <div class="album">
+                <div class="album-frame">
+                  <img decoding="async"
+                    src="https://i.ytimg.com/vi/u2NAuswnTKs/maxresdefault.jpg"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>Apna Bana Le</h2>
+                  <p>Sachin-Jigar</p>
+                </div>
+              </div>
+  
+              <div class="album">
+                <div class="album-frame">
+                  <img decoding="async"
+                    src="https://lyricsraag.com/wp-content/uploads/2022/08/Tere-Hawaale-Laal-Singh-Chaddha-lyrics-English.jpg"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>Tere Hawale</h2>
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+  
+              <div class="album">
+                <div class="album-frame">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/4e7bf466-7fa5-4dad-b628-5bca12833b64"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>Endless Summer Vacation</h2>
+                  <p>Miley Cyrus</p>
+                </div>
+              </div>
+  
+              <div class="album">
+                <div class="album-frame">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/f01f546a-7ab7-4e90-acb9-1c1e817b676d"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>The Dark Side of The Moon</h2>
+                  <p>Pink Floyd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="right-content">
+          <div class="recommended-songs">
+            <h1>Recommended Songs</h1>
+            <div class="song-container">
+              <div class="song">
+                <div class="song-img">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/ea61baa7-9c4b-4f43-805e-81de5fc8aa2b"
+                    alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Blank Space</h2>
+                  <p>Taylor Swift</p>
+                </div>
+                <span>4:33</span>
+              </div>
+  
+              <div class="song">
+                <div class="song-img">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/6f72f702-c049-46fe-af76-a3b188b9a909"
+                    alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>One Dance</h2>
+                  <p>Drake</p>
+                </div>
+                <span>4:03</span>
+              </div>
+  
+              <div class="song">
+                <div class="song-img">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/ad2e664a-3ab9-4f30-933a-623e26999030"
+                    alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Pawn It All</h2>
+                  <p>Alicia Keys</p>
+                </div>
+                <span>3:10</span>
+              </div>
+  
+              <div class="song">
+                <div class="song-img">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/666e065b-eb53-4320-a580-30e266370955"
+                    alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Lose Control</h2>
+                  <p>Teddy Swims</p>
+                </div>
+                <span>3:30</span>
+              </div>
+  
+              <div class="song">
+                <div class="song-img">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/619ed17f-5df2-4d32-a419-78f120a1aa5c"
+                    alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Be The One</h2>
+                  <p>Dua Lipa</p>
+                </div>
+                <span>3:24</span>
+              </div>
+  
+              <div class="song">
+                <div class="song-img">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/0ed3f51d-b769-4256-a4dd-8f35b12a1690"
+                    alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Delicate</h2>
+                  <p>Taylor Swift</p>
+                </div>
+                <span>3:54</span>
+              </div>
+  
+              <div class="song">
+                <div class="song-img">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/33779e1a-55f9-402a-b004-002395d0fbf1"
+                    alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Last Christmas</h2>
+                  <p>Wham!</p>
+                </div>
+                <span>4:39</span>
+              </div>
+  
+              <div class="song">
+                <div class="song-img">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/96bc0648-51f9-46ab-a426-766c6bc93d80"
+                    alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Paradise</h2>
+                  <p>Coldplay</p>
+                </div>
+                <span>4:20</span>
+              </div>
+  
+              <div class="song">
+                <div class="song-img">
+                  <img decoding="async"
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/885b67a7-1816-4235-9dd3-5d879a202728"
+                    alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Easy On Me</h2>
+                  <p>Adele</p>
+                </div>
+                <span>3:45</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="music-player">
+            <div class="album-cover">
+                <img id="rotatingImage" src="" alt="Album cover">
+              <span class="point"></span>
+            </div>
+  
+            <h2>Redemption</h2>
+            <p>Besomorph & Coopex</p>
+  
+            <audio id="song">
+                <audio id="song"></audio>
+            </audio>
+  
+            <input type="range" value="0" id="progress" />
+  
+            <div class="controls">
+              <button class="backward">
+                <i class="fa-solid fa-backward"></i>
+              </button>
+              <button class="play-pause-btn">
+                <i class="fa-solid fa-play" id="controlIcon"></i>
+              </button>
+              <button class="forward">
+                <i class="fa-solid fa-forward"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="music.js"></script>
+  </body>
+</html>
